@@ -4,7 +4,7 @@
 			<a href="#about">about</a>
 		</li>
 		<li>
-			<a href="#memes">memes</a>
+			<a href="#comments">comments</a>
 		</li>
 		<li>
 			<a href="#admin">admin</a>

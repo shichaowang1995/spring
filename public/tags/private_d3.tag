@@ -12,7 +12,7 @@
   </div>
 
   <div show={ myMemes.length == 0 }>
-    <p>NO MEMEs. Add a meme from above.</p>
+    <p>NO Comments. Add a comment from above.</p>
   </div>
 
   <admin_entry each={ myMeme in myMemes }></admin_entry>
