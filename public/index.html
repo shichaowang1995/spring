@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+  <app></app>
+
+  	<script src="./tags/app.tag" type="riot/tag"></script>
+  	<script src="./tags/about.tag" type="riot/tag"></script>
+  	<script src="./tags/menu.tag" type="riot/tag"></script>
+  	<script src="./tags/admin.tag" type="riot/tag"></script>
+  	<!-- <script src="./tags/public.tag" type="riot/tag"></script> -->
+  	<script src="./tags/admin_entry.tag" type="riot/tag"></script>
+  	<script src="./tags/memes.tag" type="riot/tag"></script>
+  	<script src="./tags/meme.tag" type="riot/tag"></script>
+  	<script src="./tags/private_d3.tag" type="riot/tag"></script>
+
+  	<script src="https://cdn.jsdelivr.net/riot/3.0/riot+compiler.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/riot-route/3.0/route.min.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  	<script src="http://d3js.org/d3.v3.min.js"></script>
+
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBpb0vAQT1YoiYIrix2ljdCV1vIeJ0kGlQ",
+        authDomain: "spring-8281a.firebaseapp.com",
+        databaseURL: "https://spring-8281a.firebaseio.com",
+        projectId: "spring-8281a",
+        storageBucket: "spring-8281a.appspot.com",
+        messagingSenderId: "918067935477",
+        appId: "1:918067935477:web:8df57fd9b4e0f9dd"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      //firebase is a js object that help communicate between your code and the cloud server
+		//get a function from this object that specifically deals with database
+		var database = firebase.database();
+		var user = firebase.auth();
+		//step one: it's a common practice to get the reference to the root of the database
+		var rootRef = database.ref('/');
+		var observable = riot.observable();
+		riot.mount('*');
+    </script>
+
+</body>
+</html>
