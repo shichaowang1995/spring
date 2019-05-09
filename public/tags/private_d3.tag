@@ -5,10 +5,10 @@
   </div>
 
   <div class="memeMaker">
-    <input type="text" ref="urlEl" placeholder="Enter url">
-    <input type="text" ref="captionEl" placeholder="Enter caption">
+    <!--input type="text" ref="urlEl" placeholder="Enter url"-->
+    <input type="text" ref="captionEl" placeholder="Enter text">
     <input type="text" ref="funnyEl" placeholder="Enter funness (0 to 5)">
-    <button type="button" onclick={ saveMeme }>Add Meme</button>
+    <button type="button" onclick={ saveMeme }>Add Comments</button>
   </div>
 
   <div show={ myMemes.length == 0 }>
@@ -25,10 +25,10 @@
   <script>
     var tag = this;
 
-    var totalCount = 9;
-    var nofun = 3; //default count
-    var somefun = 3; //default count
-    var veryfun = 3; //default count
+    //var totalCount = 9;
+  //  var nofun = 3; //default count
+//    var somefun = 3; //default count
+  //  var veryfun = 3; //default count
 
     // console.log("parent " ,this.parent.currentUser);
     this.currentUser = user.currentUser;
@@ -51,7 +51,7 @@
         id: key,
         userID: this.currentUser.uid, //global google authenticated user object
         public: false,
-        url: this.refs.urlEl.value,
+      //  url: this.refs.urlEl.value,
         caption: this.refs.captionEl.value,
         funness: this.refs.funnyEl.value
       }
@@ -68,7 +68,7 @@
 
     this.reset = function () {
       //clean up default input values
-      this.refs.urlEl.value = "";
+      //this.refs.urlEl.value = "";
       this.refs.captionEl.value = "";
       this.refs.funnyEl.value = "";
     }

@@ -1,6 +1,6 @@
 <admin_entry>
   <!-- <img src={ url } alt="user image" /> -->
-  <p>url: { myMeme.url }</p>
+  <!--p>url: { myMeme.url }</p-->
   <p>caption: { myMeme.caption }</p>
   <p>funness: { myMeme.funness }</p>
   <p>user id: { myMeme.userID }</p>
